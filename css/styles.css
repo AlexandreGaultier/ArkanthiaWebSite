@@ -385,9 +385,10 @@ body {
 .lore-page-hero {
     padding: 6rem 0;
     /* background-image: url('https://i.pinimg.com/736x/66/b0/18/66b018041878b2060fddb9f09e913935.jpg'); */
-    background-image: url('https://i.pinimg.com/736x/ed/d5/39/edd539117def46dc148ce9351e02d50b.jpg');
+    /* background-image: url('https://i.pinimg.com/736x/ed/d5/39/edd539117def46dc148ce9351e02d50b.jpg'); */
+    background-image: url('https://i.pinimg.com/1200x/54/b7/01/54b701683267d70582bc648a0f284f1e.jpg');
     background-size: cover;
-    background-position-y: 85%;
+    background-position-y: 95%;
 }
 
 .lore-page-hero .section-subtitle {
