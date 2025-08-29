@@ -382,6 +382,21 @@ body {
 }
 
 /* ===== LORE PREVIEW ===== */
+.lore-page-hero {
+    padding: 6rem 0;
+    /* background-image: url('https://i.pinimg.com/736x/66/b0/18/66b018041878b2060fddb9f09e913935.jpg'); */
+    background-image: url('https://i.pinimg.com/736x/ed/d5/39/edd539117def46dc148ce9351e02d50b.jpg');
+    background-size: cover;
+    background-position-y: 85%;
+}
+
+.lore-page-hero .section-subtitle {
+    color: var(--white);
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .lore-preview {
     padding: 6rem 0;
     background: var(--gradient-primary);
@@ -544,6 +559,416 @@ body {
     color: var(--moonlight);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+/* ===== PAGE HERO ===== */
+.page-hero {
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8)),
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+
+/* ===== KINGDOMS SECTION ===== */
+.kingdoms-section {
+    padding: 6rem 0;
+    background: var(--black);
+}
+
+.kingdoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.kingdom-card {
+    background: var(--gray-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease;
+}
+
+.kingdom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.kingdom-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.kingdom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.kingdom-card:hover .kingdom-image img {
+    transform: scale(1.05);
+}
+
+.kingdom-content {
+    padding: 2rem;
+}
+
+.kingdom-title {
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+}
+
+.kingdom-description {
+    color: var(--moonlight);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.kingdom-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ===== BOOK OF SOULS SECTION ===== */
+.book-of-souls-section {
+    padding: 6rem 0;
+    background: var(--gray-light);
+}
+
+.book-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-description {
+    margin-bottom: 3rem;
+}
+
+.book-description p {
+    color: var(--moonlight);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.book-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== BOOK OPENED ===== */
+.book-opened {
+    margin-top: 3rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.book-page {
+    background: var(--gray-dark);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--quaternary-color);
+}
+
+.character-name {
+    font-family: var(--font-accent);
+    font-size: 2.5rem;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.character-status p {
+    color: var(--moonlight);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.page-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.character-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-section h4 {
+    font-family: var(--font-accent);
+    font-size: 1.3rem;
+    color: var(--quaternary-color);
+    margin-bottom: 0.8rem;
+    border-left: 3px solid var(--quaternary-color);
+    padding-left: 1rem;
+}
+
+.info-section p,
+.info-section ul {
+    color: var(--moonlight);
+    line-height: 1.6;
+}
+
+.info-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-section li::before {
+    content: "•";
+    color: var(--quaternary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.character-backstory h4,
+.character-project h4 {
+    font-family: var(--font-accent);
+    font-size: 1.5rem;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.character-backstory p,
+.character-project p {
+    color: var(--moonlight);
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.page-actions {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== BELONGING TEST SECTION ===== */
+.belonging-test-section {
+    padding: 6rem 0;
+    background: var(--gradient-primary);
+}
+
+.test-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.test-description {
+    margin-bottom: 3rem;
+}
+
+.test-description p {
+    color: var(--moonlight);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.test-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.test-note {
+    color: var(--quinary-color);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ===== ARCHIVES SECTION ===== */
+.archives-section {
+    padding: 6rem 0;
+    background: var(--black);
+}
+
+.archives-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.archives-description {
+    margin-bottom: 1rem;
+}
+
+.archives-description p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--moonlight);
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* ===== ARCHIVE CARD ===== */
+.archive-card {
+    background: var(--gray-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.archive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* ===== ARCHIVE CARD IMAGE ===== */
+.archive-card-image {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.archive-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: var(--shadow-medium);
+    margin-top: 2rem;
+}
+
+.archive-card:hover .archive-card-image img {
+    transform: scale(1.05);
+}
+
+/* ===== ARCHIVE CARD CONTENT ===== */
+.archive-card-content {
+    font-family: var(--font-accent);
+    padding: 1.5rem;
+}
+
+.archive-card-title {
+    font-family: var(--font-accent);
+    font-size: 1.8rem;
+    color: var(--quinary-color);
+    margin: 1rem;
+    line-height: 1.3;
+}
+
+.archive-card-excerpt {
+    color: var(--moonlight);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.archive-card-full {
+    color: var(--moonlight);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.archive-card-full p {
+    margin-bottom: 1rem;
+}
+
+/* ===== ARCHIVE TOGGLE BUTTON ===== */
+.archive-toggle-btn {
+    background: transparent;
+    border: 2px solid var(--quaternary-color);
+    color: var(--quaternary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.archive-toggle-btn:hover {
+    background: var(--quaternary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.archive-toggle-btn.active {
+    background: var(--quaternary-color);
+    color: var(--white);
+}
+
+.toggle-text {
+    transition: all 0.3s ease;
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.archive-toggle-btn.active .toggle-icon {
+    transform: rotate(180deg);
 }
 
 /* ===== PREVIOUS EVENTS SECTION ===== */
@@ -829,6 +1254,41 @@ body {
     
     .galleries-title {
         font-size: 1.8rem;
+    }
+    
+    .kingdoms-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .kingdom-image {
+        height: 200px;
+    }
+    
+    .archives-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .archive-card-image {
+        height: 180px;
+    }
+    
+    .archive-card-content {
+        padding: 1.2rem;
+    }
+    
+    .archive-card-title {
+        font-size: 1.3rem;
+    }
+    
+    .book-page {
+        padding: 2.5rem;
+    }
+    
+    .character-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 }
 
@@ -1120,6 +1580,69 @@ body {
     .galleries-title {
         font-size: 1.6rem;
     }
+    
+    .kingdoms-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .book-page {
+        padding: 2rem;
+        margin: 0 15px;
+    }
+    
+    .character-name {
+        font-size: 2rem;
+    }
+    
+    .character-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .kingdom-card {
+        margin: 0 15px;
+    }
+    
+    .kingdom-content {
+        padding: 1.5rem;
+    }
+    
+    .kingdom-title {
+        font-size: 1.8rem;
+    }
+    
+    .book-content,
+    .test-content {
+        padding: 0 15px;
+    }
+    
+    .archives-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 15px;
+    }
+    
+    .archive-card {
+        margin: 0 15px;
+    }
+    
+    .archive-card-image {
+        height: 160px;
+    }
+    
+    .archive-card-content {
+        padding: 1.2rem;
+    }
+    
+    .archive-card-title {
+        font-size: 1.3rem;
+    }
+    
+    .archive-toggle-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
 }
 
 /* ===== TRÈS PETIT MOBILE (max-width: 480px) ===== */
@@ -1164,6 +1687,83 @@ body {
     
     .galleries-title {
         font-size: 1.5rem;
+    }
+    
+    .page-hero {
+        min-height: 40vh;
+        padding-top: 60px;
+    }
+    
+    .kingdoms-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .kingdom-card {
+        margin: 0 10px;
+    }
+    
+    .kingdom-content {
+        padding: 1rem;
+    }
+    
+    .kingdom-title {
+        font-size: 1.5rem;
+    }
+    
+    .kingdom-image {
+        height: 180px;
+    }
+    
+    .book-actions,
+    .test-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .archives-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    
+    .archive-card {
+        margin: 0 10px;
+    }
+    
+    .archive-card-image {
+        height: 140px;
+    }
+    
+    .archive-card-content {
+        padding: 1rem;
+    }
+    
+    .archive-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .archive-toggle-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .archive-card-excerpt {
+        font-size: 0.9rem;
+    }
+    
+    .book-page {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .character-name {
+        font-size: 1.8rem;
+    }
+    
+    .page-header {
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     .hero-image-img,
