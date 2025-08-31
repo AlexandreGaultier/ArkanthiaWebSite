@@ -253,7 +253,7 @@ body {
 
 
 /* ===== NEXT EVENT SECTION ===== */
-.next-event-section {
+.next-event-hero {
     padding: 6rem 0;
     background-image: url('https://talesofarkanthia.fr/wp-content/uploads/2024/04/banner.jpg');
     background-position-y: 50%;
@@ -1231,6 +1231,10 @@ body {
 }
 
 /* ===== PREVIOUS EVENTS SECTION ===== */
+.next-event-section {
+    padding: 6rem 0;
+}
+
 .previous-events-section {
     padding: 6rem 0;
     background: var(--gray-light);
@@ -1440,7 +1444,6 @@ body {
 
     .hero-container {
         gap: 3rem;
-        padding-left: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
