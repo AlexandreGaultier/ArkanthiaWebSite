@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arkanthia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/Logo150x150.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherish&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Arkanthia</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="evenements.html" class="nav-link">Événements</a>
+                <a href="lore.html" class="nav-link">Lore</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-page-hero">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Contact</h1>
+                <p class="section-subtitle">Tissons ensemble de nouveaux liens magiques</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Description -->
+            <div class="contact-description">
+                <p>Que vous souhaitiez nous adresser un message, soumettre votre candidature pour figurer dans le Livre des Âmes, être bénévole sur nos événements ou encore explorer des opportunités de partenariat, nous sommes impatients de lire chacun de vos mots et de tisser de nouveaux liens au sein de notre communauté magique.</p>
+                <h3 class="contact-form-title">Décrivez-nous votre demande en quelques mots</h3>
+            </div>
+
+            <!-- Formulaire de Contact -->
+            <div class="contact-form-container">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Motif de demande *</label>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="">Choisissez un motif</option>
+                            <option value="demande-info">Demande d'informations</option>
+                            <option value="benevole">Être bénévole</option>
+                            <option value="prestataire">Être prestataire</option>
+                            <option value="partenariat">Un Partenariat</option>
+                            <option value="livre-ames">Le livre des âmes</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Votre message *</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Décrivez votre demande en détail..." required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Liens Sociaux -->
+            <div class="social-links-section">
+                <h3 class="social-links-title">Rejoignez notre communauté</h3>
+                <p class="social-links-subtitle">Suivez-nous sur les réseaux sociaux pour rester connectés</p>
+                
+                <div class="social-links-grid">
+                    <a href="#" class="social-link facebook">
+                        <div class="social-icon">📘</div>
+                        <span class="social-name">Facebook</span>
+                    </a>
+                    
+                    <a href="#" class="social-link instagram">
+                        <div class="social-icon">📷</div>
+                        <span class="social-name">Instagram</span>
+                    </a>
+                    
+                    <a href="#" class="social-link tiktok">
+                        <div class="social-icon">🎵</div>
+                        <span class="social-name">TikTok</span>
+                    </a>
+                    
+                    <a href="#" class="social-link pinterest">
+                        <div class="social-icon">📌</div>
+                        <span class="social-name">Pinterest</span>
+                    </a>
+                    
+                    <a href="#" class="social-link discord">
+                        <div class="social-icon">💬</div>
+                        <span class="social-name">Discord</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Arkanthia</h3>
+                    <p>L'association qui organise des bals à thème féerique, plongeant ses participants dans un univers
+                        mystique et enchanteur.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Email: contact@arkanthia.fr</li>
+                        <li>Discord: Arkanthia</li>
+                        <li>Instagram: @arkanthia_events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Arkanthia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

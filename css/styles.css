@@ -255,7 +255,8 @@ body {
 /* ===== NEXT EVENT SECTION ===== */
 .next-event-section {
     padding: 6rem 0;
-    background-image: url('https://images.unsplash.com/photo-1585588985526-9459c1bb9e9e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://talesofarkanthia.fr/wp-content/uploads/2024/04/banner.jpg');
+    background-position-y: 50%;
     background-size: cover;
     background-position: center;
 }
@@ -456,6 +457,14 @@ body {
 }
 
 /* ===== FAQ PREVIEW ===== */
+
+.faq-page-hero {
+    padding: 6rem 0;
+    background-image: url('https://talesofarkanthia.fr/wp-content/uploads/2024/04/banner.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+}
+
 .faq-preview {
     padding: 6rem 0;
     background: var(--black);
@@ -482,9 +491,9 @@ body {
 }
 
 .faq-item h3 {
-    font-family: var(--font-tertiary);
+    font-family: var(--font-accent);
     font-size: 1.2rem;
-    color: var(--quaternary-color);
+    color: var(--quinary-color);
     margin-bottom: 1rem;
 }
 
@@ -495,6 +504,74 @@ body {
 
 .faq-cta {
     text-align: center;
+}
+
+/* ===== FAQ PAGE ===== */
+.faq-section {
+    padding: 6rem 0;
+    background: var(--black);
+}
+
+.faq-section .faq-grid {
+    margin-bottom: 4rem;
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    border-left: 4px solid var(--quaternary-color);
+    padding-left: 1rem;
+}
+
+.faq-answer {
+    color: var(--moonlight);
+    line-height: 1.8;
+}
+
+.faq-answer p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-link {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.faq-link:hover {
+    color: var(--quinary-color);
+    text-decoration: underline;
+}
+
+.faq-cta {
+    text-align: center;
+    padding: 3rem;
+    background: var(--gray-dark);
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-cta-title {
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+}
+
+.faq-cta-text {
+    color: var(--moonlight);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 /* ===== CONTACT PREVIEW ===== */
@@ -533,11 +610,11 @@ body {
 .contact-icon .placeholder-icon {
     font-size: 2rem;
     margin-right: 1rem;
-    color: var(--mystic-purple);
+    color: var(--quaternary-color);
 }
 
 .contact-details h4 {
-    font-family: var(--font-tertiary);
+    font-family: var(--font-accent);
     font-size: 1.1rem;
     color: var(--quaternary-color);
     margin-bottom: 0.3rem;
@@ -560,6 +637,187 @@ body {
     color: var(--moonlight);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page-hero {
+    padding: 6rem 0;
+    background-image: url('https://talesofarkanthia.fr/wp-content/uploads/2024/04/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section {
+    padding: 6rem 0;
+    background: var(--black);
+}
+
+.contact-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.contact-description p {
+    color: var(--moonlight);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-form-title {
+    font-family: var(--font-accent);
+    font-size: 1.8rem;
+    color: var(--quaternary-color);
+    margin-bottom: 2rem;
+}
+
+/* ===== FORMULAIRE DE CONTACT ===== */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.contact-form {
+    background: var(--gray-dark);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: var(--shadow-medium);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    color: var(--quinary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    border-radius: 10px;
+    background: var(--gray-light);
+    color: var(--moonlight);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--quaternary-color);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--quinary-color);
+    opacity: 0.7;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ===== LIENS SOCIAUX ===== */
+.social-links-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links-title {
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    color: var(--quaternary-color);
+    margin-bottom: 1rem;
+}
+
+.social-links-subtitle {
+    color: var(--moonlight);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--gray-dark);
+    border-radius: 15px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    text-decoration: none;
+    color: var(--moonlight);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    border-color: var(--quaternary-color);
+    box-shadow: var(--shadow-medium);
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.social-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--quinary-color);
+}
+
+/* Couleurs spécifiques pour chaque réseau social */
+.social-link.facebook:hover {
+    border-color: #1877f2;
+    background: rgba(24, 119, 242, 0.1);
+}
+
+.social-link.instagram:hover {
+    border-color: #e4405f;
+    background: rgba(228, 64, 95, 0.1);
+}
+
+.social-link.tiktok:hover {
+    border-color: #000000;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.social-link.pinterest:hover {
+    border-color: #bd081c;
+    background: rgba(189, 8, 28, 0.1);
+}
+
+.social-link.discord:hover {
+    border-color: #5865f2;
+    background: rgba(88, 101, 242, 0.1);
 }
 
 /* ===== PAGE HERO ===== */
@@ -1244,6 +1502,35 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .faq-question {
+        font-size: 1.25rem;
+    }
+    
+    .faq-cta {
+        padding: 2.5rem;
+    }
+    
+    .faq-cta-title {
+        font-size: 1.9rem;
+    }
+    
+    .contact-form {
+        padding: 2.2rem;
+    }
+    
+    .contact-form-title {
+        font-size: 1.7rem;
+    }
+    
+    .social-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .social-links-title {
+        font-size: 1.9rem;
+    }
+    
     .galleries-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -1517,6 +1804,24 @@ body {
         font-size: 1.1rem;
     }
 
+    .faq-question {
+        font-size: 1.2rem;
+        padding-left: 0.8rem;
+    }
+
+    .faq-cta {
+        padding: 2rem;
+        margin: 0 15px;
+    }
+
+    .faq-cta-title {
+        font-size: 1.8rem;
+    }
+
+    .faq-cta-text {
+        font-size: 1rem;
+    }
+
     /* Contact Preview */
     .contact-preview {
         padding: 4rem 0;
@@ -1542,6 +1847,31 @@ body {
 
     .contact-form-preview {
         padding: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .contact-form-title {
+        font-size: 1.6rem;
+    }
+
+    .social-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .social-link {
+        padding: 1.2rem;
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+
+    .social-links-title {
+        font-size: 1.8rem;
     }
 
     /* Footer */
@@ -1751,6 +2081,54 @@ body {
     
     .archive-card-excerpt {
         font-size: 0.9rem;
+    }
+    
+    .faq-question {
+        font-size: 1.1rem;
+        padding-left: 0.6rem;
+    }
+    
+    .faq-cta {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .faq-cta-title {
+        font-size: 1.6rem;
+    }
+    
+    .faq-cta-text {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .contact-form-title {
+        font-size: 1.4rem;
+    }
+    
+    .social-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .social-link {
+        padding: 1rem;
+    }
+    
+    .social-icon {
+        font-size: 1.8rem;
+    }
+    
+    .social-links-title {
+        font-size: 1.5rem;
+    }
+    
+    .social-links-subtitle {
+        font-size: 1rem;
     }
     
     .book-page {
