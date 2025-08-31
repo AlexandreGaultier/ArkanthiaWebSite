@@ -654,6 +654,13 @@ body {
     background-position: center;
 }
 
+.contact-page-hero .section-subtitle {
+    color: var(--white);
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .contact-section {
     padding: 6rem 0;
     background: var(--black);
