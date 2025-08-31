@@ -364,7 +364,7 @@ body {
     display: block;
     font-family: var(--font-accent);
     font-size: 2.5rem;
-    color: var(--quaternary-color);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
@@ -422,7 +422,7 @@ body {
 .lore-excerpt h3 {
     font-family: var(--font-accent);
     font-size: 1.3rem;
-    color: var(--quaternary-color);
+    color: var(--quinary-color);
     margin-bottom: 1rem;
 }
 
@@ -560,9 +560,6 @@ body {
 .faq-cta {
     text-align: center;
     padding: 3rem;
-    background: var(--gray-dark);
-    border-radius: 20px;
-    border: 1px solid rgba(139, 92, 246, 0.2);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -2107,9 +2104,13 @@ body {
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-    
+
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+
     .page-hero {
         min-height: 40vh;
         padding-top: 60px;
