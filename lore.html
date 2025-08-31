@@ -22,14 +22,14 @@
             <div class="nav-logo">
                 <h1>Arkanthia</h1>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="evenements.html" class="nav-link">Événements</a>
                 <a href="lore.html" class="nav-link active">Lore</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle">
+            <div class="nav-toggle" id="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -145,7 +145,8 @@
                 <!-- Sitara -->
                 <div class="kingdom-card">
                     <div class="kingdom-image">
-                        <img src="https://i.pinimg.com/736x/99/d8/a5/99d8a5db05f4b2193ce59944b70d58fd.jpg" alt="Sitara">
+                        <img src="https://i.pinimg.com/1200x/bd/f3/9d/bdf39d05470e2ab233d0dc5c109655b4.jpg"
+                            alt="Sitara">
                     </div>
                     <div class="kingdom-content">
                         <h3 class="kingdom-title">Sitara</h3>
@@ -221,7 +222,7 @@
 
             <!-- Le Livre Ouvert (caché par défaut) -->
             <div class="book-opened" id="bookOpened" style="display: none;">
-                <div class="book-page">
+                <div class="book-page" id="pageCircé">
                     <div class="page-header">
                         <h3 class="character-name">CİRCE BRİARLAINE</h3>
                         <div class="character-status">
@@ -299,9 +300,98 @@
                     </div>
 
                     <div class="page-actions">
-                        <button class="btn btn-primary" id="nextPageBtn">Page suivante</button>
                         <button class="btn btn-primary" id="previousPageBtn">Page précédente</button>
+                        <button class="btn btn-primary" id="nextPageBtn">Page suivante</button>
                         <button class="btn btn-secondary" id="closeBookBtn">Fermer le livre</button>
+                    </div>
+                </div>
+
+                <!-- Page 2 : Azael Al Vadran (cachée par défaut) -->
+                <div class="book-page" id="pageAzael" style="display: none;">
+                    <div class="page-header">
+                        <h3 class="character-name">AZAEL AL VADRAN</h3>
+                        <div class="character-status">
+                            <p><strong>Statut actuel:</strong> Empereur d'Arkanthia</p>
+                            <p><strong>Statut initial:</strong> Second Prince du Royaume d'Albagarde</p>
+                        </div>
+                    </div>
+
+                    <div class="page-content">
+                        <div class="character-info">
+                            <div class="info-section">
+                                <h4>Titres</h4>
+                                <p>Commandant Vadran, Empereur Azael, Prince Azael</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h4>Caractéristiques physiques</h4>
+                                <ul>
+                                    <li>Teint pâle protégé du soleil du désert avec des drapés</li>
+                                    <li>Yeux clairs</li>
+                                    <li>Cheveux longs châtains</li>
+                                    <li>Porte des vêtements nobles caractéristiques de sa culture</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-section">
+                                <h4>Caractéristiques personnelles</h4>
+                                <ul>
+                                    <li>Maîtrise exceptionnelle de la magie du feu, héritage de la lignée royale
+                                        d'Albagarde</li>
+                                    <li>Connu pour son détachement face à la royauté et sa vision pragmatique du
+                                        leadership</li>
+                                    <li>Stratège militaire dont le rôle est de protéger Albagarde et son indépendance
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="character-backstory">
+                            <h4>Backstory</h4>
+                            <p>Azael Al Vadran, avant de devenir souverain d'Arkanthia, était le second prince bâtard
+                                d'Albagarde. Il est né d'une union adultère entre le Roi d'Albagarde et une voyageuse
+                                étrangère. Dès son plus jeune âge, il a démontré une maîtrise innée de la magie du feu.
+                            </p>
+                            <p>En opposition à son statut, Azael était un esprit libre et imprévisible, peu intéressé
+                                par la couronne et les intrigues politiques du palais.</p>
+                            <p>La belle-mère d'Azael, la Reine, vouait une haine profonde au fruit de l'union interdite
+                                entre son mari et une autre femme. Ainsi, elle insista pour qu'il soit nommé général des
+                                armées, espérant secrètement qu'il n'en revienne jamais, sous couvert de lui donner des
+                                responsabilités. À sa grande déception, Azael s'est avéré être un leader exceptionnel et
+                                un tacticien hors pair.</p>
+                            <p>Sa nomination comme Empereur est survenue suite à la tragédie qui frappa la famille
+                                royale d'Arkanthia, plaçant Azael dans une position de leadership qu'il n'avait jamais
+                                envisagée. Bien qu'il ait initialement été réticent à accepter le rôle, il comprit la
+                                nécessité de monter sur le trône avec son Impératrice pour préserver la paix et la
+                                stabilité régionale. La sécurité du royaume d'Albagarde ayant été placée entre ses
+                                mains, la décision de rejoindre ou non l'Alliance des royaumes lui incombait.</p>
+                            <p>Azael et Circé se sont rencontré lors d'une entrevue diplomatique où les tensions entre
+                                les autres royaumes d'Arkanthia et Albagarde étaient palpables. Initialement réticent à
+                                rejoindre l'Alliance en raison de la volonté d'Albagarde de maintenir son indépendance,
+                                Azael a été intrigué par la répartie habile et les motivations pures de Circé lors des
+                                négociations.</p>
+                            <p>Leur rapprochement a été facilité par un objectif partagé concernant l'avenir de leurs
+                                nations. Azael a accompagné Circé pour la suite de son voyage diplomatique, lors duquel
+                                il a pu découvrir la richesse d'Arkanthia et en particulier de Sitara. Une compréhension
+                                mutuelle s'est développée, accompagnée d'une attraction personnelle entre Azael et
+                                Circé.</p>
+                        </div>
+
+                        <div class="character-project">
+                            <h4>Rôle dans l'Alliance</h4>
+                            <p>Azael, en tant qu'Empereur d'Arkanthia et ancien Commandant de l'Armée d'Albagarde,
+                                apporte sa force militaire et sa stratégie tactique à l'Alliance. Son expertise en magie
+                                du feu et sa connaissance des tactiques militaires d'Albagarde renforcent
+                                considérablement la défense du continent. Sa présence sur le trône garantit également la
+                                participation d'Albagarde à l'Alliance, transformant un ancien ennemi potentiel en un
+                                allié puissant.</p>
+                        </div>
+                    </div>
+
+                    <div class="page-actions">
+                        <button class="btn btn-primary" id="nextPageBtn2">Page suivante</button>
+                        <button class="btn btn-primary" id="previousPageBtn2">Page précédente</button>
+                        <button class="btn btn-secondary" id="closeBookBtn2">Fermer le livre</button>
                     </div>
                 </div>
             </div>
@@ -330,7 +420,7 @@
                     </p>
                 </div>
                 <div class="test-actions">
-                    <a href="https://chat.openai.com/" class="btn btn-primary" target="_blank">Commencer le Test</a>
+                    <a href="https://chatgpt.com/g/g-uVx4qNVFs-arkanthia" class="btn btn-primary" target="_blank">Commencer le Test</a>
                     <p class="test-note">Le test vous sera proposé par notre assistant IA</p>
                 </div>
             </div>
@@ -507,9 +597,11 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li>Email: contact@arkanthia.fr</li>
-                        <li>Discord: Arkanthia</li>
-                        <li>Instagram: @arkanthia_events</li>
+                        <li><a href="https://discord.com/invite/2PE3yMR7Ep">Discord</a></li>
+                        <li><a href="https://www.instagram.com/talesofarkanthia/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/p/Arkanthia-61557889413712/">Facebook</a></li>
+                        <li><a href="https://www.pinterest.fr/talesofarkanthia">Pinterest</a></li>
+                        <li><a href="https://www.tiktok.com/@talesofarkanthia">TikTok</a></li>
                     </ul>
                 </div>
             </div>

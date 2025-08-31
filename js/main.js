@@ -44,10 +44,49 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openBookBtn && closeBookBtn && bookOpened) {
         openBookBtn.addEventListener('click', function() {
             bookOpened.style.display = 'block';
+            // Afficher la première page par défaut
+            document.getElementById('pageCircé').style.display = 'block';
+            document.getElementById('pageAzael').style.display = 'none';
             bookOpened.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
         closeBookBtn.addEventListener('click', function() {
+            bookOpened.style.display = 'none';
+        });
+    }
+
+    // ===== NAVIGATION ENTRE LES PAGES DU LIVRE =====
+    const nextPageBtn = document.getElementById('nextPageBtn');
+    const previousPageBtn = document.getElementById('previousPageBtn');
+    const nextPageBtn2 = document.getElementById('nextPageBtn2');
+    const previousPageBtn2 = document.getElementById('previousPageBtn2');
+    const closeBookBtn2 = document.getElementById('closeBookBtn2');
+
+    if (nextPageBtn && previousPageBtn && nextPageBtn2 && previousPageBtn2 && closeBookBtn2) {
+        // Navigation depuis la page Circé
+        nextPageBtn.addEventListener('click', function() {
+            document.getElementById('pageCircé').style.display = 'none';
+            document.getElementById('pageAzael').style.display = 'block';
+        });
+
+        previousPageBtn.addEventListener('click', function() {
+            document.getElementById('pageCircé').style.display = 'block';
+            document.getElementById('pageAzael').style.display = 'none';
+        });
+
+        // Navigation depuis la page Azael
+        nextPageBtn2.addEventListener('click', function() {
+            document.getElementById('pageAzael').style.display = 'none';
+            document.getElementById('pageCircé').style.display = 'block';
+        });
+
+        previousPageBtn2.addEventListener('click', function() {
+            document.getElementById('pageAzael').style.display = 'none';
+            document.getElementById('pageCircé').style.display = 'block';
+        });
+
+        // Fermer le livre depuis la page Azael
+        closeBookBtn2.addEventListener('click', function() {
             bookOpened.style.display = 'none';
         });
     }
